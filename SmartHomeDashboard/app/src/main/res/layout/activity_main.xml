@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Navigation Tabs with Images -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1F1F1F"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/topTabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Tab: All Devices -->
+            <LinearLayout
+                android:id="@+id/tabAll"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_devices"
+                    android:tint="#BBBBBB"/>
+
+                <TextView
+                    android:text="All Devices"
+                    android:textColor="#BBBBBB"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <!-- Tab: My Devices -->
+            <LinearLayout
+                android:id="@+id/tabMy"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_devices"
+                    android:tint="#BBBBBB"/>
+
+                <TextView
+                    android:text="My Devices"
+                    android:textColor="#BBBBBB"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <!-- Tab: Settings -->
+            <LinearLayout
+                android:id="@+id/tabSettings"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_settings"
+                    android:tint="#BBBBBB"/>
+
+                <TextView
+                    android:text="Settings"
+                    android:textColor="#BBBBBB"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Device Grid -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/deviceRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
