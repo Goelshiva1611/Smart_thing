@@ -34,11 +34,11 @@ class MainActivity : AppCompatActivity() {
         deviceList.clear()
         deviceList.addAll(
             listOf(
-                Device(R.drawable.ic_lightbulb, "Desk light", true),
-                Device(R.drawable.ic_ceiling_lamp, "Globe", false),
+                Device(R.drawable.ic_light, "Desk Light", true),
+                Device(R.drawable.ic_tv, "TV", false),
+                Device(R.drawable.ic_globe, "Globe", false),
                 Device(R.drawable.ic_security, "Security", true),
-                Device(R.drawable.ic_coffee, "Coffee", true),
-                Device(R.drawable.ic_tv, "TV", false)
+                Device(R.drawable.ic_coffee, "Coffee", true)
             )
         )
         adapter.notifyDataSetChanged()
